@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/etFileName"
+        android:hint="File Name"
+        android:gravity="center_horizontal"
+        android:inputType="textPersonName"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="80dp"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        tools:ignore="Autofill,Hardcodedtext"/>
+
+    <Button
+        android:id="@+id/btCreate"
+        android:text="Create File"
+        android:layout_below="@+id/etFileName"
+        android:layout_marginTop="16dp"
+        android:layout_alignStart="@+id/etFileName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:ignore="HardcodedText" />
+
+    <Button
+        android:id="@+id/btDelete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/etFileName"
+        android:layout_marginTop="60dp"
+        android:layout_alignStart="@+id/etFileName"
+        android:text="Delete"
+        tools:ignore="HardcodedText" />
+
+</RelativeLayout>
